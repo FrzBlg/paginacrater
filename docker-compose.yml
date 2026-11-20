@@ -22,7 +22,6 @@ services:
   app:
     build: .
     container_name: rdms-app
-    profiles: ["app"]
     restart: unless-stopped
     depends_on:
       db:
